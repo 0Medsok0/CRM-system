@@ -16,11 +16,11 @@
 
 ## Установка:
 
-https://github.com/0Medsok0/CRM-system.git<br>
-Install the required packages:
+git clone https://github.com/0Medsok0/CRM-system.git<br><br>
+Установите необходимые пакеты:
 
-pip install -r requirements.txt
-Set up the database:
+pip install -r requirements.txt<br><br>
+Настройка базы данных:
 
 flask db init
 flask db migrate
