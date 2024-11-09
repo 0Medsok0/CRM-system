@@ -16,7 +16,7 @@
 
 ## Установка:
 
-https://github.com/0Medsok0/CRM-system.git
+https://github.com/0Medsok0/CRM-system.git<br>
 Install the required packages:
 
 pip install -r requirements.txt
