@@ -14,8 +14,8 @@ ma = Marshmallow(app)
 app.config['MAIL_SERVER'] = 'smtp.mail.ru'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'jhon.programmer@bk.ru'
-app.config['MAIL_PASSWORD'] = 'ZVRwmTKgXXNYYJrmm3tc'
+app.config['MAIL_USERNAME'] = 'you mail'
+app.config['MAIL_PASSWORD'] = 'you mail pass'
 app.config['SECRET_KEY'] = 'your-secret-key'
 mail = Mail(app)
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -129,7 +129,7 @@ def send_email():
         if not contact:
             return redirect(url_for('home'))
 
-        msg = Message(subject, sender='jhon.programmer@bk.ru', recipients=[contact.email])
+        msg = Message(subject, sender='--email--', recipients=[contact.email])
         msg.body = body
 
         if file:
