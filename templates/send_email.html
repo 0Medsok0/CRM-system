@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/send_email.css') }}">
+</head>
+<body>
+
+<h2>Send Email</h2>
+
+<form action="{{ url_for('send_email') }}" method="post" enctype="multipart/form-data">
+  <label for="contact_id">Contact ID:</label><br>
+  <input type="text" id="contact_id" name="contact_id"><br>
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject" name="subject"><br>
+  <label for="body">Body:</label><br>
+  <textarea id="body" name="body"></textarea><br>
+  <label for="file">Attachment:</label><br>
+  <input type="file" id="file" name="file"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script src="{{ url_for('static', filename='js/send_email.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/add_contact.css') }}">
+</head>
+<body>
+<h2>Add Contact</h2>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.name.label }} {{ form.name() }}
+    </div>
+    <div>
+        {{ form.email.label }} {{ form.email() }}
+    </div>
+    <div>
+        {{ form.phone.label }} {{ form.phone() }}
+    </div>
+    <div>
+        {{ form.region.label }} {{ form.region() }}
+    </div>
+    <div>
+        {{ form.industry.label }} {{ form.industry() }}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
+</form>
+
+
+<script src="{{ url_for('static', filename='js/add_contact.js') }}"></script>
+</body>
+</html>
